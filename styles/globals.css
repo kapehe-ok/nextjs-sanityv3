@@ -1,9 +1,13 @@
+@import url(https://fonts.bunny.net/css?family=advent-pro:400);
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100vh;
+
 }
 
 a {
@@ -19,8 +23,55 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main h2 {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 4rem;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+nav a {
+  font-size: 24px;
+  display: block;
+  padding: 5px 0;
+  transition: 0.3s ease transform;
+}
+
+nav a:hover {
+  transform: translateX(3px) rotate(-2deg);
+  color: #e43917;
+}
+
+main a[href="/"] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  background: #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+main a[href="/admin"] {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  background: #333;
+  padding: 8px 15px;
+  border-radius: 5px;
 }
